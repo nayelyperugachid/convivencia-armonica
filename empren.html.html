@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <title>emprendimiento</title>
+<style>
+<!--
+.intro{
+position:fixed;
+left:0;
+top:0;
+layer-background-color:yellow;
+background-color:CadetBlue;
+border:0.1px solid CadetBlue;
+z-index:10;
+}
+-->
+</style>
+<div id="i1" class="intro"></div><div id="i2" class="intro"></div><div id="i3"
+class="intro"></div><div id="i4" class="intro"></div><div id="i5" class="intro"></div><div
+id="i6" class="intro"></div><div id="i7" class="intro"></div><div id="i8" class="intro"></div>
+<script language="JavaScript1.2">
+
+/*
+Left-Right Stripy Curtain Script- (c) Dynamic Drive (www.dynamicdrive.com)
+For full source code, 100's more free DHTML scripts, and TOS,
+visit http://www.dynamicdrive.com
+*/
+
+
+var speed=20
+var temp=new Array()
+var temp2=new Array()
+
+var clipright=(window.innerWidth)?window.innerWidth:document.body.clientWidth
+clipleft=0
+for (i=1;i<=8;i++){
+temp[i]=document.getElementById("i"+i).style
+temp[i].width=(window.innerWidth)?window.innerWidth-15+'px':document.body.clientWidth+'px'
+temp[i].height=(window.innerHeight)?window.innerHeight/8+'px':document.body.offsetHeight/8+'px'
+temp[i].top=(i-1)*parseInt(temp[i].height) + 'px'
+}
+
+function openit(){
+
+clipright-=speed
+for (i=1;i<=8;i=i+2){
+temp[i].clip="rect(0 "+clipright+"px auto 0)"
+}
+clipleft+=speed
+for (i=2;i<=8;i=i+2){
+temp[i].clip="rect(0 auto auto "+clipleft+"px)"
+}
+if (clipright<=0){
+
+for (i=1;i<=8;i++)
+temp[i].display="none"
+
+clearInterval(stopit)
+}
+}
+function gogo(){
+stopit=setInterval("openit()",100)
+}
+gogo()
+</script>
+    </head>
+    <body>
+           <body background="tasa.jpg">
+          <font color="red" face=" Didot">
+       
+<script language="JavaScript">
+
+
+/*
+script edited by David Gardner (toolmandav@geocities.com)
+Permission granted to Dynamicdrive.com to feature the script
+For more DHTML scripts, visit Dynamicdrive.com
+*/
+
+//put your text here
+var theText = "Tasa Interna De Retorno";
+
+function nextSize(i,incMethod,textLength)
+{
+if (incMethod == 1) return (72*Math.abs( Math.sin(i/(textLength/3.14))) );
+if (incMethod == 2) return (255*Math.abs( Math.cos(i/(textLength/3.14))));
+}
+
+function sizeCycle(text,method,dis)
+{
+	output = "";
+	for (i = 0; i < text.length; i++)
+	{
+		size = parseInt(nextSize(i +dis,method,text.length));
+		output += "<font style='font-size: "+ size +"pt'>" +text.substring(i,i+1)+ "</font>";
+	}
+	theDiv.innerHTML = output;
+}
+
+function doWave(n) 
+{   
+	sizeCycle(theText,1,n);
+	if (n > theText.length) {n=0}
+	setTimeout("doWave(" + (n+1) + ")", 50);
+}
+</script>
+<div ID="theDiv" align="center">
+
+</div>
+<body onload = "doWave (0)"  
+        <font color="red" face=" Didot">
+        <h1><p style="color:#FF00FF";>Objetivo de aprendizaje:</p></h1>
+      <font color="yellow" face=" Didot"> <h2><p style=”text-align: justify;”>Los estudiantes comprenderán que la ciudadanía mundial
+                                                   y la cultura de paz exigen el repeto y la práctica de los
+                                                   derechos humanos ,la justicia social,la diversidad la igualdad
+                                                   entre todos los seres humanos ,la sostenibilidada
+                                                   ambiental en función de promover un mundo y un futuro mejor para todos.</p></h2>
+                        <font color="purple" face=" Didot">
+                       <h1><p style="color:#FF0000";>Definición</p></h1>
+<style type="text/css">
+h3 {text-shadow: 8px 8px 8px yellow;}
+</style>
+                          
+  
+
+                         <h2><p style="color:#FFA500";align="center">La tasa interna de retorno (TIR) es la tasa de interés o rentabilidad que ofrece una inversión.<br>
+                                                                     Es decir, es el porcentaje de beneficio o pérdida que tendrá una inversión para las cantidades <br>
+                                                                     que no se han retirado del proyecto.<br></p></h2><br>
+           <h1><p style="color:#FF00FF";align="center">¿Cómo se calcula la TIR?</p></h1> <h2><p style="color:#191970">También se puede definir basándonos en su cálculo, la TIR es la tasa<br>
+                                                                                                                              de descuento que iguala, en el momento inicial, la corriente futura de<br>
+                                                                                                                              cobros con la de pagos, generando un VAN igual a cero:</p></h2><br>
+
+                                                                                                                            <font color="orange" face=" Didot"> <h2> Ft   son los flujos de dinero en cada periodo t<br></h2>
+                                                                                                                               <h2>I0   es la inversión realiza en el momento inicial ( t = 0 )<br></h2>
+                                                                                                                               <h2>n   es el número de periodos de tiempo<br></h2></font>
+     <h1><p style="color:#00FF00";align="center">Criterio de selección de proyectos según la Tasa interna de retorno</p></h1> <h2><p style="color:#00FFFF";align="center">El criterio de selección será el siguiente donde “k” es la tasa de descuento de flujos elegida para el cálculo del VAN:<br>
+
+1) Si TIR > k , el proyecto de inversión será aceptado. En este caso, la tasa de rendimiento interno<br>
+que obtenemos es superior a la tasa mínima de rentabilidad  exigida a la inversión.<br>
+2) Si TIR = k , estaríamos en una situación similar a la que se producía cuando el VAN era igual a cero.<br> 
+3) En esta situación, la inversión podrá llevarse a cabo si mejora la posición competitiva de la empresa y no hay alternativas más favorables.<br>
+4) Si TIR < k , el proyecto debe rechazarse. No se alcanza la rentabilidad mínima que le pedimos a la inversión.</p></h2>
+
+                             
+
+<div align="center"><img src="formulaTIR.png" width="1200" height="400"></div><br>
+ </html>
+ <h1><p style="color:#FF0000";>Instrucciones del juego:</p></h1>
+<h2><p style="color:#000000";align="center">De acuerdo con el pequeño resumen resaltado,<br>en la ruleta conteste las preguntas según corresponda.
+</p></h2>
+
+ <h1><a href="https://www.wordwall.net/resource/17140792">Link del juego en wordwall</a><br></h1>
+<iframe src="https://www.wordwall.net/es/embed/881bd2347e7f43e0ab0366c766ac8d3e?themeId=50&templateId=8" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+<footer class="footer">
+<input type=button value=Atrás onclick="history.go(-1)">
+<img src="sello.png"
+  width="100"
+     height="100">
+
+            <h4><p style="color:#000000";>Unidad Educativa Municipal Técnica En Ciencias<br> "San Francisco De Quito"<br>
+             Todos los derechos reservador <br>
+             Alejandra Guerra -Nayely Perugachi  - 2021-2022</p></h4>
+
+</footer>
+ <style type="text/css">
+.wrapper {
+  min-height: calc(100% - 4rem);
+}
+.footer {
+  height: 13rem;
+  background-color: #C0C0C0
+}
+ </style">

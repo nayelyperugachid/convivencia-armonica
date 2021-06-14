@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>lenguaje</title>
+<style>
+<!--
+.intro{
+position:fixed;
+left:0;
+top:0;
+layer-background-color:yellow;
+background-color:pink;
+border:0.1px solid pink;
+z-index:10;
+}
+-->
+</style>
+<div id="i1" class="intro"></div><div id="i2" class="intro"></div><div id="i3"
+class="intro"></div><div id="i4" class="intro"></div><div id="i5" class="intro"></div><div
+id="i6" class="intro"></div><div id="i7" class="intro"></div><div id="i8" class="intro"></div>
+<script language="JavaScript1.2">
+
+/*
+Left-Right Stripy Curtain Script- (c) Dynamic Drive (www.dynamicdrive.com)
+For full source code, 100's more free DHTML scripts, and TOS,
+visit http://www.dynamicdrive.com
+*/
+
+
+var speed=20
+var temp=new red()
+var temp2=new black()
+
+var clipright=(window.innerWidth)?window.innerWidth:document.body.clientWidth
+clipleft=0
+for (i=1;i<=8;i++){
+temp[i]=document.getElementById("i"+i).style
+temp[i].width=(window.innerWidth)?window.innerWidth-15+'px':document.body.clientWidth+'px'
+temp[i].height=(window.innerHeight)?window.innerHeight/8+'px':document.body.offsetHeight/8+'px'
+temp[i].top=(i-1)*parseInt(temp[i].height) + 'px'
+}
+
+function openit(){
+
+clipright-=speed
+for (i=1;i<=8;i=i+2){
+temp[i].clip="rect(0 "+clipright+"px auto 0)"
+}
+clipleft+=speed
+for (i=2;i<=8;i=i+2){
+temp[i].clip="rect(0 auto auto "+clipleft+"px)"
+}
+if (clipright<=0){
+
+for (i=1;i<=8;i++)
+temp[i].display="none"
+
+clearInterval(stopit)
+}
+}
+function gogo(){
+stopit=setInterval("openit()",100)
+}
+gogo()
+</script>
+    </head>
+    <body>
+           <body background="derechoshumanos.jpg">
+         
+       
+<script language="JavaScript">
+
+
+/*
+script edited by David Gardner (toolmandav@geocities.com)
+Permission granted to Dynamicdrive.com to feature the script
+For more DHTML scripts, visit Dynamicdrive.com
+*/
+
+//put your text here
+var theText = "Derechos Humanos";
+
+function nextSize(i,incMethod,textLength)
+{
+if (incMethod == 1) return (72*Math.abs( Math.sin(i/(textLength/3.14))) );
+if (incMethod == 2) return (255*Math.abs( Math.cos(i/(textLength/3.14))));
+}
+
+function sizeCycle(text,method,dis)
+{
+	output = "";
+	for (i = 0; i < text.length; i++)
+	{
+		size = parseInt(nextSize(i +dis,method,text.length));
+		output += "<font style='font-size: "+ size +"pt'>" +text.substring(i,i+1)+ "</font>";
+	}
+	theDiv.innerHTML = output;
+}
+
+function doWave(n) 
+{   
+	sizeCycle(theText,1,n);
+	if (n > theText.length) {n=0}
+	setTimeout("doWave(" + (n+1) + ")", 50);
+}
+</script>
+<div ID="theDiv" align="center">
+
+</div>
+<body onload = "doWave (0)"  
+
+                
+        <font color="red" face=" Didot">
+        <h1><p style="color:#FF00FF";>Objetivo de aprendizaje:</p></h1>
+       <font color="blue" face=" Didot"><h2><p style=”text-align: justify;”> Los estudiantes comprenderán que la ciudadanía mundial
+                             y la cultura de paz exigen el repeto y la práctica
+                             de los derechos humanos ,la justicia social,la diversidad
+                             la igualdad entre todos los seres humanos ,la sostenibilidada
+                             ambiental en función de promover un mundo y un futuro mejor para todos.</p></h2>
+                        <font color="purple" face=" Didot">
+                       <h1><p style="color:#FF0000";>¿Qué son los derechos humanos?</p></h1>
+<style type="text/css">
+h3 {text-shadow: 8px 8px 8px purple;}
+</style>
+                          
+  
+
+                         <h2><p style="color:#8B4513";align="center">Los derechos humanos son normas que reconocen y protegen la dignidad de todos los<br>
+                                                                     seres humanos. Estos derechos rigen la manera en que los individuos viven en sociedad y<br>
+                                                                     se relacionan entre sí, al igual que sus relaciones con el Estado y las obligaciones del<br>
+                                                                     Estado hacia ellos.</p></h2><br>
+                                                                    <h2> El cumplimiento de un derecho a menudo depende, total o parcialmente, del cumplimiento<br>
+                                                                     de otros derechos. Por ejemplo, el ejercicio efectivo del derecho a la salud puede depender<br>
+                                                                     del ejercicio efectivo del derecho a la educación o a la información.</h2><br>
+                                      <div align="center"><img src="y.jpg" width="500" height="300"></div><br>
+          
+
+                            
+ </html>
+ <h2><p style="color:#FF0000";>Instrucciones del juego:</p></h2>
+<h2><p style="color:#000000";align="center">De acuerdo con el pequeño resumen resaltado,<br>en la sopa de letras encuentre los 15 derechos fundamentales.
+</p></h2>
+
+
+<iframe src="https://www.wordwall.net/es/embed/9137bf4131d74aeeabbbf689fefa55fc?themeId=45&templateId=10" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+<footer class="footer">
+<input type=button value=Atrás onclick="history.go(-1)">
+<img src="sello.png"
+  width="100"
+     height="100">
+
+            <h4><p style="color:#000000";>Unidad Educativa Municipal Técnica En Ciencias<br> "San Francisco De Quito"<br>
+             Todos los derechos reservador <br>
+             Alejandra Guerra -Nayely Perugachi  - 2021-2022</p></h4>
+
+</footer>
+ <style type="text/css">
+.wrapper {
+  min-height: calc(100% - 4rem);
+}
+.footer {
+  height: 13rem;
+  background-color: #C0C0C0
+}
+ </style">

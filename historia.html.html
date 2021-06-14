@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Historia</title>
+    </head>
+    <body>
+           <body background="femi.gif">
+         <font color="red" face=" Didot">
+        <h1><script language="JavaScript1.2">
+
+//Neon Lights Text II by G.P.F. (gpf@beta-cc.de)
+//visit http://www.beta-cc.de
+//Visit http://www.dynamicdrive.com for this script 
+
+var message="MOVIMIENTOS SOCIALES"
+var neonbasecolor="black"
+var neontextcolor="blue"
+var neontextcolor2="#00FF00"
+var flashspeed=100						// speed of flashing in milliseconds
+var flashingletters=3						// number of letters flashing in neontextcolor
+var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
+var flashpause=0						// the pause between flash-cycles in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2 
+if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",flashpause)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script></h2>
+        <h2><p style="color:#FF0000";>Objetivo de aprendizaje:</p></h2>
+        <font color="blue" face=" Didot"><h3><p  style=”text-align: justify;”>Los estudiantes comprenderán que la ciudadanía mundial
+                             y la cultura de paz exigen el repeto y la práctica
+                             de los derechos humanos ,la justicia social,la diversidad
+                             la igualdad entre todos los seres humanos ,la sostenibilidada
+                             ambiental en función de promover un mundo y un futuro mejor para todos.</p></h3>
+                        <font color="purple" face=" Didot">
+  <h1 align="center"><i>Movimiento Feminista</i></h1>
+  </font>
+<style type="text/css">
+h3 {text-shadow: 8px 8px 8px blue;}
+</style>
+                          
+  
+
+                         <h3><p style="color:#191970";align="center">El feminismo es un movimiento social y político que se inicia formalmente a finales del siglo XVIII-<br>
+                                                       aunque sin adoptar todavía esta denominación- y que supone la toma de conciencia de las mujeres<br> 
+                                                       como grupo o colectivo humano, de la opresión, dominación, y explotación de que han sido y son <br>
+                                                       objeto por parte del colectivo de varones en el seno del patriarcado bajo sus distintas fases históricas<br>
+                                                       de modelo de producción, lo cual las mueve a la acción para la liberación de su sexo con todas las<br>
+                                                       transformaciones de la sociedad que aquella requiera.<br></p></h3>
+           <h3><p style="color:#006400";align="center">Como movimiento social formado por grupos organizados, el feminismo se ha desarrollado en una sucesión de etapas<br>
+                                                       o fases, a las se ha denominado «olas». En cada fase u «ola» se han desarrollado ideas y conceptos, teorías, estrategias,<br>
+                                                       acciones y corrientes muy diversas, por lo que se utiliza, en algunos casos la noción de «feminismos» para denotar esa <br>
+                                                       diversidad.Como movimiento de transformación de la sociedad, tiene una vocación de influencia sobre la forma en la que <br>
+                                                       se conceptualiza la realidad y en el discurso científico.
+
+</p></h3>
+
+                             
+
+<div align="center"><img src="historia.jpg" width="500" height="300"></div><br>
+ </html>
+ <h2><p style="color:#FF0000";>Instrucciones del juego:</p></h2>
+<h3><p style="color:#008080";align="center">De acuerdo con el pequeño resumen resaltado,<br> lea detenidamente las preguntas y conteste verdadero o falso según corresponda.
+</p></h3>
+
+
+<iframe src="https://www.wordwall.net/es/embed/1155ec25841b417180d1595dd604928d?themeId=48&templateId=35" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+<footer class="footer">
+<input type=button value=Atrás onclick="history.go(-1)">
+<img src="sello.png"
+  width="100"
+     height="100">
+
+            <h4><p style="color:#000000";>Unidad Educativa Municipal Técnica En Ciencias<br> "San Francisco De Quito"<br>
+             Todos los derechos reservador <br>
+             Alejandra Guerra -Nayely Perugachi  - 2021-2022</p></h4>
+
+</footer>
+ <style type="text/css">
+.wrapper {
+  min-height: calc(100% - 4rem);
+}
+.footer {
+  height: 13rem;
+  background-color: #C0C0C0
+}
+ </style">
